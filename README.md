@@ -23,6 +23,6 @@
 > Es importante destacar que si bien estas son las tareas que hizo cada uno, cada vez que surgia una dificultad nos ayudabamos mutuamente
 
 ---
-A continuacion te dejamos el link para que puedas acceder al video explicatvo:
+A continuacion te dejamos el link para que puedas acceder al video explicativo:
 
 :computer: https://www.youtube.com/watch?v=u3XGaIW7RwY&list=PLpgiK1d8dgNbX2YHtmGYuX-9PwVAGA6rN&index=3
