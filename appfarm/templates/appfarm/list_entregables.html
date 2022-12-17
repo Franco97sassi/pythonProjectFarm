@@ -1,0 +1,25 @@
+{% extends 'appfarm/base.html' %}
+
+{% block contenido %} 
+
+<h2>Listado de productos:</h2>
+
+<table>
+
+<ul>
+    {% for entregable in object_list %} 
+
+    <tr>
+        <th><li>{{entregable.nombre}}</li></th>
+
+        <th><a href="{% url 'farm-entregables-detail' entregable.id %}">Detalle_____</a>
+        <a href="{% url 'farm-entregables-update' entregable.id %}">Actualizar_____</a>
+        <a href="{% url 'farm-entregables-delete' entregable.id %}">Borrar</a></th>
+    </tr>
+
+    {% endfor %}
+</ul>
+
+</table>
+
+{% endblock %}

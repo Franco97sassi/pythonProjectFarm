@@ -1,0 +1,25 @@
+{% extends 'appfarm/base.html' %}
+
+{% block contenido %} 
+
+<h2>Listado de paginas:</h2>
+
+<table>
+
+<ul>
+    
+    {% for post in object_list %} 
+    
+        <tr><th><li>{{post.path | safe}}</li></th>
+
+        <th><a href="{% url 'farm-post-detail' post.id %}">_____Detalle_____</a>
+        <a href="{% url 'farm-post-update' post.id %}">Actualizar_____</a>
+        <a href="{% url 'farm-post-delete' post.id %}">Borrar</a></th></tr>
+    
+    {% endfor %}
+
+</ul>
+
+</table>
+
+{% endblock %}

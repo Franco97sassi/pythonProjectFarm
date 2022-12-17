@@ -1,0 +1,22 @@
+{% extends 'appfarm/base.html' %}
+
+{% block contenido %} 
+
+<p> Solo personal autorizado podra acceder a la opcion Administration</p>
+
+{% if errors %} 
+   <p style="color: red">Errores en el inicio de sesion: {{errors}}</p> 
+{% endif %}
+
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <input type="submit" value="Iniciar sesion">
+
+</form>
+
+<p> Si no tenes cuenta, podes crearte una haciendo click aqui: <a href="{% url 'auth-register' %}">Register/account</a></p>
+
+{% endblock %}

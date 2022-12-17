@@ -1,0 +1,26 @@
+{% extends "appfarm/base.html" %}
+{% block titulo %} Sobre Nosotros {% endblock %}
+{% block contenido %}
+{% load static %}
+ <h1 class="text-center" > Acerca de nosotros</h1>
+
+<p class="text-dark" >FarmFresh se dedica a la venta  de frutas y vegetales, y esta formada por Damian Lucci, Cristian Garcia Zanfardini y Franco Sassi.
+    Esta misma fue creada por Cristian con el fin de hacer nuestra primer aplicacion web estilo blog en Django , hacer crecer nuestro negocio y hacerlo mas conocido.
+    La empresa ha demostrado su gran avance en el ultimo tiempo ya sea ampliando su planta productiva, incorporando  buenas practicas y ahora expandiendose de manera online.
+    Por ultimo, nosotros buscamos siempre el maximo nivel de eficiencia,ocupar  el mayor espacio posible en el mercado y ser por sobre todo un equipo.
+</p>
+ 
+<div class="d-flex justify-content-around"> 
+    <img src="https://github.com/Franco97sassi/Subida-About/blob/main/imagen1.jpg?raw=true" alt="damian" width="200" height="200" class="rounded-circle">
+    <img src="https://github.com/Franco97sassi/Subida-About/blob/main/imagen2.jpg?raw=true" alt="cristian" width="200" height="200" class="rounded-circle">
+    <img src="https://github.com/Franco97sassi/Subida-About/blob/main/imagen3.jpg?raw=true" alt="franco" width="200" height="200" class="rounded-circle">
+</div>
+<div class="d-flex justify-content-around"> 
+    <h6 width="100" height="100">Damian Lucci </h6>
+    <h6 width="100" height="100">Cristian Garcia Zanfardini</h6>
+    <h6 width="100" height="100">Franco Sassi </h6> 
+
+</div>
+<br>
+<br>
+{% endblock %}

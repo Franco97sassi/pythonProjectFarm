@@ -1,0 +1,28 @@
+{% extends 'appfarm/base.html' %}
+
+{% block contenido %}
+
+<h2>Listado:</h2>
+
+<table>
+
+<ul>
+    {% for vegetal in vegetales %}
+
+    <tr>
+        {% if vegetal.imagen %}
+        <th><li><img src="{{vegetal.imagen.url}}" width="50" height="50">
+        {% endif %}        
+        
+        __Descripcion: <span style="color: orange;"> {{vegetal.nombre}}</span></li></th>
+           <th>__Precio $:<span style="color:forestgreen;">{{vegetal.precio}}</span></th> 
+                
+    </tr>
+
+    {% endfor %}
+
+</ul>
+
+</table>
+
+{% endblock %}

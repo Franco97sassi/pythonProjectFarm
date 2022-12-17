@@ -1,0 +1,20 @@
+{% extends 'appfarm/base.html' %}
+
+{% block contenido %} 
+
+{% if errors %} 
+   <p style="color: red">Errores en el registro de usuarios: {{errors}}</p> 
+{% endif %}
+
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <input type="submit" value="Registrar usuario">
+
+</form>
+
+<p> Si ya tenes cuenta, podes acceder haciendo click aqui: <a href="{% url 'auth-login' %}">Login</a></p>
+
+{% endblock %}

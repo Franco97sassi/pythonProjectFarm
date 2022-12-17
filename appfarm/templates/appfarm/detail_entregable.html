@@ -1,0 +1,21 @@
+{% extends 'appfarm/base.html' %}
+
+{% block contenido %} 
+
+<h1>Detalle del producto</h1>
+
+<p style="color:orangered">Autor: {{entregable.usuario}}</p>
+<p>Clasificacion: {{entregable.clasificacion}}</p>
+<p>Nombre: {{entregable.nombre}}</p>
+<p>Fecha vto: {{entregable.fecha_de_vto}}</p>
+<p>Precio $: {{entregable.precio}}</p>
+<p>Nº codigo: {{entregable.codigo}}</p>
+<p>Razon social del productor: {{entregable.productor}}</p>
+<p>Entregado: {{entregable.entregado}}</p>
+<p>
+    {% if entregable.imagen %}
+    Imagen: <img src="{{entregable.imagen.url}}" width="120" height="120">
+    {% endif %}
+</p>
+
+{% endblock %}

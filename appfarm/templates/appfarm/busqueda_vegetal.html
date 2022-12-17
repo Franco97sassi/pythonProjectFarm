@@ -1,0 +1,14 @@
+{% extends 'appfarm/base.html' %}
+
+{% block contenido %}
+
+<form action="{% url 'farm-vegetal-buscar-resultado' %}" method="get">
+
+    <p> 
+        Nombre del producto: <input type="text" name="nombre_vegetal">
+        <input type="submit" value="Buscar" >
+    </p>
+
+</form>
+
+{% endblock %}

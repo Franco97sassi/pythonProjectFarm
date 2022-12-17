@@ -1,0 +1,16 @@
+{% extends 'appfarm/base.html' %}
+
+{% block contenido %} 
+
+<form method="post">
+    {% csrf_token %} 
+
+    <p> 
+        Estas seguro que deseas borrar la pagina: <span style="color:orange;">'{{object.path}}'</span>?
+        <input type="submit" value="Si">
+    </p>
+
+    <a href="{% url 'farm-post-list' %}">Volver al listado</a>
+</form>
+
+{% endblock %}
